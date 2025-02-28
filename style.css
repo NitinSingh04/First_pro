@@ -169,12 +169,21 @@ html,body{
     padding:3.4vw 5.7vw;
     justify-content: space-between;
 }
-#nav svg{
+#main svg{
     padding-left:3vw;
+    position: fixed;
+    z-index: 5;
+    left:05.5%;
+    top:3.3%;
 }
 #pa1{
-    font-weight: 100;
-    font-size:1vw;
+    font-size:1.4vw;
+    padding-left:23vw;
+    line-height: 2.1vh;
+}
+#pa1 h5{
+    font-weight: 100;   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #navPart2{
     display: flex;
@@ -189,16 +198,14 @@ html,body{
 #page1Centre{
     width: 72%;
     margin-left: 28%;
-    /* background-color:aqua ; */
-    font-size: 5vw;
+    font-size: 5.2vw;
     font-weight: 100;
     line-height: 7vw;
     height: fit-content;
     text-transform: uppercase;
 }
 #page1Centre h2{
-    font-weight: 400;
-    /* font-family: */
+    font-weight: 500;
 }
 #page1Centre:nth-child(2){
     margin-top:5vw;
@@ -215,9 +222,48 @@ html,body{
 #web:hover,#graphic:hover{
     -webkit-text-stroke: 1px #fff;
     color: transparent;
+    text-decoration: none;
     font-weight:500;
 }
 #page2{
     height: 100vh;
+    width: 100%;
+    background-color: #151515;  
+    position: relative;
+}
+#viCont{
+    height: 70vh;
+    width: 72vw;
+    position:relative;
+    left:28%;
+    top:13%;
+}
+#viCur{
+    height: 10vw;
+    width: 10vw;
+    position: fixed;
+    background-color: #ffa63c;
+    border-radius: 50%;
+    left:77%;
+    margin-top:2.4vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 88;
+}
+#viCur i{
+    font-size:2.3vw;
+}
+
+#viCont img{
+    height: 101%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#viCont video{
+    padding:1px;
+    height: 99%;
+    object-fit: cover;
     width: 100%;
 }
