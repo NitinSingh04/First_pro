@@ -118,15 +118,37 @@ tl.to("#loader",{
   duration:0.5,
   delay:2
 })
-tl.from("#page1",{
+tl.from("#page1 ,#page1Centre h2",{
   y:1200,
   opacity:0,
   duration:0.5,
   delay:0.2,
-  ease:Power4
+  ease:Power4,
+  y:100,
+  stagger:0.2,
+  duration:0.5,
+  opacity:0
 })
+
 tl.to("#loader",{
   display:'none'
 })
+tl.from("nav",{
+  // y:100,
+  opacity:0,
+
+})
 }
 loadingAnimation()
+
+function crsrAnimation(){
+  document.addEventListener("mousemove",function(dets){
+    gsap.to("#crsr",{
+      left:dets.x,
+      top:dets.y
+    })
+  })
+  Shery.makeMagnet("#nav h3", {
+  });
+}
+crsrAnimation();
